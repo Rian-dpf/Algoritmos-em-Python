@@ -2,7 +2,7 @@
 #do primeiro, do meio e do último caracteres de cada string de entrada.
 
 class novaString:
-  def _init_ (self):
+  def __init__ (self):
     self.s1 = str(input("Digite uma string: "))
     self.s2 = str(input("Digite outra string: "))
 
@@ -10,9 +10,9 @@ class novaString:
     self.criaNovaString()
   
   def criaNovaString(self):
-    s3 = self.s1[0]
-
-    print(s3)
+    teste = enumerate(self.s1)
+    
+    print(teste)
 
 novaString = novaString()
 novaString.iniciar()
