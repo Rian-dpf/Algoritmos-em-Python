@@ -17,7 +17,7 @@ class total:
         valorDesconto = (self.percentualDesconto / 100) * valorSemDesconto
         valorTotalVenda = valorSemDesconto - valorDesconto
 
-        print('Produto: ' + self.produto + ' Valor total da venda: ' + str(valorTotalVenda))
+        print(f'Produto: {self.produto} Valor total da venda: {valorTotalVenda}')
 
 total = total()
 total.iniciar()

@@ -13,7 +13,7 @@ class reajusteSalarial:
         reajuste = (self.porcentagemReajuste / 100) * self.salarioAtual
         salarioReajustado = self.salarioAtual + reajuste
 
-        print('O seu novo salário com um reajuste de 35% é: ' + str(salarioReajustado))
+        print(f'O seu novo salário com um reajuste de 35% é: {salarioReajustado}')
 
 reajusteSalarial = reajusteSalarial()
 reajusteSalarial.iniciar()
