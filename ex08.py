@@ -7,10 +7,10 @@ class calculadora:
         self.numero2 = int(input("Digite outro número: "))
 
     def iniciar(self):
-        self.soma()
-        self.subtracao()
-        self.multiplicacao()
-        self.divisao()
+            self.soma()
+            self.subtracao()
+            self.multiplicacao()
+            self.divisao()
 
     def soma(self):
         soma = self.numero1 + self.numero2
