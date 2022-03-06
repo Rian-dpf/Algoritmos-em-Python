@@ -1,7 +1,7 @@
 #Escreva um programa para verificar se a palavra 'laranja' está presente em "Isto é suco
 #de laranja".
 
-class existePalavra:
+class ExistePalavra:
     def __init__ (self):
         self.frase = "Isto é suco de laranja"
         self.palavra = "laranja"
@@ -11,9 +11,9 @@ class existePalavra:
 
     def verificaPalavra(self):
         if self.palavra not in self.frase:
-            print(f"A palavra {self.palavra} não está presente na frase {self.frase}")
+            print(f"A palavra {self.palavra} não está presente na frase: {self.frase}")
         else:
-            print(f"A palavra {self.palavra} está presente na frase {self.frase}")
+            print(f"A palavra {self.palavra} está presente na frase: {self.frase}")
 
-existePalavra = existePalavra()
+existePalavra = ExistePalavra()
 existePalavra.iniciar()

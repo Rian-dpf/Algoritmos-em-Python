@@ -2,7 +2,7 @@
 #programa que concatene as listas L1 e L2 em uma nova lista L3. Em seguida, imprima
 #a lista L3 ordenada de maneira crescente e decrescente.
 
-class ordena:
+class Ordena:
   def __init__ (self):
     self.l1 = [12,87,65,90]
     self.l2 = [56,786,89,34,9]
@@ -25,5 +25,5 @@ class ordena:
 
     print(l3)
 
-ordena = ordena()
+ordena = Ordena()
 ordena.iniciar()

@@ -2,7 +2,7 @@
 #informação no seu respectivo vetor. Imprima a idade e a altura na ordem inversa a
 #ordem lida.
 
-class apresentaNaOrdemIversa:
+class ApresentaNaOrdemIversa:
   def __init__ (self):
     self.idades = []
     self.alturas = []
@@ -25,5 +25,5 @@ class apresentaNaOrdemIversa:
       print(self.idades[::-1])
       print(self.alturas[::-1])
 
-apresentaNaOrdemIversa = apresentaNaOrdemIversa()
+apresentaNaOrdemIversa = ApresentaNaOrdemIversa()
 apresentaNaOrdemIversa.iniciar()

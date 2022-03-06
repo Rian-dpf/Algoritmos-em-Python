@@ -1,7 +1,7 @@
 #Escreva um programa que solicite uma frase ao usuário e escreva a frase toda em
 #maiúscula e sem espaços em branco.
 
-class conversorFrase:
+class ConversorFrase:
   def __init__ (self):
     self.frase = str(input("Digite uma frase qualquer: "))
 
@@ -9,9 +9,9 @@ class conversorFrase:
     self.converteFrase()
 
   def converteFrase(self):
-    fraseMaiusculaSemEspacos = self.frase.upper().replace(" ", "")
+    frase_maiuscula_sem_espacos = self.frase.upper().replace(" ", "")
 
-    print(fraseMaiusculaSemEspacos)
+    print(frase_maiuscula_sem_espacos)
 
-conversorFrase = conversorFrase()
+conversorFrase = ConversorFrase()
 conversorFrase.iniciar()

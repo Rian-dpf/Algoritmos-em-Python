@@ -1,7 +1,7 @@
 #Faça um programa que dada duas strings, s1 e s2 retornam uma nova string composta
 #do primeiro, do meio e do último caracteres de cada string de entrada.
 
-class novaString:
+class NovaString:
   def __init__ (self):
     self.s1 = str(input("Digite uma string: "))
     self.s2 = str(input("Digite outra string: "))
@@ -14,5 +14,5 @@ class novaString:
     
     print(teste)
 
-novaString = novaString()
+novaString = NovaString()
 novaString.iniciar()

@@ -1,19 +1,19 @@
 #Escreva um programa que receba o salário de um funcionário (float), e retorne o
 #resultado do novo salário com reajuste de 35%
 
-class reajusteSalarial:
+class ReajusteSalarial:
     def __init__ (self):
-        self.salarioAtual = float(input("Digite o seu salário atual: "))
-        self.porcentagemReajuste = 35
+        self.salario_atual = float(input("Digite o seu salário atual: "))
+        self.porcentagem_reajuste = 35
         
     def iniciar(self):
         self.calculaReajuste()
 
     def calculaReajuste(self):
-        reajuste = (self.porcentagemReajuste / 100) * self.salarioAtual
-        salarioReajustado = self.salarioAtual + reajuste
+        reajuste = (self.porcentagem_reajuste / 100) * self.salario_atual
+        salario_reajustado = self.salario_atual + reajuste
 
-        print(f'O seu novo salário com um reajuste de 35% é: {salarioReajustado}')
+        print(f'O seu novo salário com um reajuste de 35% é: {salario_reajustado}')
 
-reajusteSalarial = reajusteSalarial()
+reajusteSalarial = ReajusteSalarial()
 reajusteSalarial.iniciar()

@@ -1,7 +1,7 @@
 #Ler uma lista de 5 números inteiros e mostre cada número juntamente com a sua
 #posição na lista.
 
-class mostraPosicao:
+class MostraPosicao:
   def __init__ (self):
     self.lista = [5,4,8,9,7]
 
@@ -23,5 +23,5 @@ class mostraPosicao:
 
       
 
-mostraPosicao = mostraPosicao()
+mostraPosicao = MostraPosicao()
 mostraPosicao.iniciar()

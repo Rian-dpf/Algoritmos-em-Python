@@ -1,19 +1,19 @@
 #Faça um Programa que leia 4 notas, mostre as notas e a média na tela
 
-class media:
+class Media:
     def __init__ (self):
-        self.nota1 = int(input("Qual a sua primeira nota 1: "))
-        self.nota2 = int(input("Qual a sua primeira nota 2: "))
-        self.nota3 = int(input("Qual a sua primeira nota 3: "))
-        self.nota4 = int(input("Qual a sua primeira nota 4: "))
+        self.nota_1 = int(input("Qual a sua primeira nota 1: "))
+        self.nota_2 = int(input("Qual a sua primeira nota 2: "))
+        self.nota_3 = int(input("Qual a sua primeira nota 3: "))
+        self.nota_4 = int(input("Qual a sua primeira nota 4: "))
 
     def iniciar(self):
         self.calculaMedia()
 
     def calculaMedia(self):
-        media = (self.nota1 + self.nota2 + self.nota3 + self.nota4) / 4
+        media = (self.nota_1 + self.nota_2 + self.nota_3 + self.nota_4) / 4
 
-        print(media)
+        print(f'Média final: {media}')
 
-media = media()
+media = Media()
 media.iniciar()
