@@ -2,18 +2,19 @@
 
 class Media:
     def __init__ (self):
-        self.nota_1 = int(input("Qual a sua primeira nota 1: "))
-        self.nota_2 = int(input("Qual a sua primeira nota 2: "))
-        self.nota_3 = int(input("Qual a sua primeira nota 3: "))
-        self.nota_4 = int(input("Qual a sua primeira nota 4: "))
+        self.nota1 = float(input("Qual a sua nota 1: "))
+        self.nota2 = float(input("Qual a sua nota 2: "))
+        self.nota3 = float(input("Qual a sua nota 3: "))
+        self.nota4 = float(input("Qual a sua nota 4: "))
 
     def iniciar(self):
         self.calculaMedia()
 
     def calculaMedia(self):
-        media = (self.nota_1 + self.nota_2 + self.nota_3 + self.nota_4) / 4
+        media = (self.nota1 + self.nota2 + self.nota3 + self.nota4) / 4
 
-        print(f'Média final: {media}')
+        print(f'O valor de cada nota é {self.nota1}, {self.nota2}, {self.nota3}, {self.nota4}')
+        print(f'A média é: {media}')
 
 media = Media()
 media.iniciar()

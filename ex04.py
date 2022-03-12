@@ -6,8 +6,8 @@ class Total:
     def __init__ (self):
         self.produto = input("Insira o produto que você comprou: ")
         self.quantidade_comprada = int(input("Insira a quantidade que você comprou: "))
-        self.valor_unitario = int(input("Qual o valor unitário do produto: "))
-        self.percentual_desconto = int(input("Qual o percentual de desconto: "))
+        self.valor_unitario = float(input("Qual o valor unitário do produto: "))
+        self.percentual_desconto = float(input("Qual o percentual de desconto: "))
 
     def iniciar(self):
         self.calculaValorVenda()
@@ -17,7 +17,8 @@ class Total:
         valor_desconto = (self.percentual_desconto / 100) * valor_sem_desconto
         valor_total_venda = valor_sem_desconto - valor_desconto
 
-        print(f'Produto: {self.produto} Valor total da venda: {valor_total_venda}')
+        print(f'Produto Comprado: {self.produto}')
+        print(f'Valor total da venda: {valor_total_venda}')
 
 total = Total()
 total.iniciar()

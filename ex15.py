@@ -1,6 +1,8 @@
 #Crie um Python Script que conte quantas vezes um nome está presente em uma lista
 #[’nome1’, ’nome2’, ...] e armazena essa contagem em um dicionário {’nome’: xvezes}.
 
+import collections
+
 class Contador:
   def __init__ (self):
     self.nomes_lista = ["Rian", "Guilherme", "Matheus", "Rian", "Moacir", "Matheus"]
@@ -9,9 +11,9 @@ class Contador:
       self.ContaVezes()
 
   def ContaVezes(self):
-      teste = {self.nomes_lista[i]: len(self.nomes_lista[i]) for i in range(len(self.nomes_lista))}
+      conta_vezes = collections.Counter(self.nomes_lista)
 
-      print(teste)
+      print(conta_vezes)
 
 contador = Contador()
-contador.iniciar()
+contador.iniciar()            

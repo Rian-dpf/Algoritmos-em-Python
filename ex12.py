@@ -10,7 +10,8 @@ class Media:
     def calculaMedia(self):
         media_final = sum(self.notas) / 4
 
-        print(media_final)
+        print(f'O valor de cada nota é {self.notas}')
+        print(f'A média é: {media_final}')
 
 Media = Media()
 Media.iniciar()

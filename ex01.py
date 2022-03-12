@@ -3,8 +3,8 @@
 
 class DescobreValor:
     def __init__ (self):
-        self.x = int(input("Digite o valor de X: "))
-        self.y = int(input("Digite o valor de y: "))
+        self.x = float(input("Digite o valor de X: "))
+        self.y = float(input("Digite o valor de y: "))
 
     def iniciar(self):
         self.calculaZ()
