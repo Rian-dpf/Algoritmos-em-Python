@@ -10,9 +10,12 @@ class NovaString:
     self.criaNovaString()
   
   def criaNovaString(self):
-    teste = enumerate(self.s1)
-    
-    print(teste)
+    tamanho_s1 = len(self.s1)
+    tamanho_s2 = len(self.s2)
+
+    s3 = self.s1[0] + self.s1[round(tamanho_s1 / 2)] + self.s1[-1] + self.s2[0] + self.s2[round(tamanho_s2 / 2)] + self.s2[-1]
+
+    print(s3)
 
 novaString = NovaString()
 novaString.iniciar()

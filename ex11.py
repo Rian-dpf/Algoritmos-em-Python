@@ -9,19 +9,8 @@ class MostraPosicao:
     self.verificaPosicao()
 
   def verificaPosicao(self):
-    teste = list(range(len(self.lista)))
-    numeroTeste = int
-    indiceTeste = int
-
-    for numero in self.lista:
-      numeroTeste = numero
-
-    for indice in teste:      
-      indiceTeste = indice
-      
-      print(f"{numeroTeste} : {indiceTeste}")
-
-      
+    for i in range(0, len(self.lista)):
+      print(f'{self.lista[i]} : {i}')
 
 mostraPosicao = MostraPosicao()
 mostraPosicao.iniciar()
